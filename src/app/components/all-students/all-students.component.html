@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row mt-5">
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr *ngFor="let student of studentsList;let i = index">
+                <th scope="row stdid">{{student.id}}</th>
+                <td class="col-3">{{student.fname}}</td>
+                <td class="col-3">{{student.lname}}</td>
+                <td class="col-3">{{student.email}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+<!-- justify-content-between -->

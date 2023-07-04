@@ -1,0 +1,31 @@
+<!-- <div class="container"> -->
+    <!-- <div class="row">
+        <div class="card-group text-center g-0">
+            <div *ngFor="let exam of [1,2,3,4]; let i = index" class="card mx-5" style="width: 18rem;">
+                <img src="assets\images\bootstrap.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div> -->
+    <div class="row w-100">
+        <div *ngFor="let item of subjectList;let i = index" class="col-md-4 g-0">
+            <div class="card border-1 mx-2 my-2 text-center" style="width: 18re,m;">
+                <img src={{item.img}} class="card-img-top" alt="...">
+                <div class="card-body mt-3 ">
+                    <h4 class="card-title fw-bold">{{item.SubName}}</h4>
+                    <p id="countryp">{{item.discription}}</p>
+                    <div class="row ">
+                        <div class="col-md-4 m-auto">
+                            <hr class="hr" />
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Start Exam</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
